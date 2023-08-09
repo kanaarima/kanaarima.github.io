@@ -1,0 +1,16 @@
+<html>
+<title>
+    Hi
+</title>
+
+<head>
+    <script>
+        const queryString = window.location.search;
+        console.log(queryString);
+        const urlParams = new URLSearchParams(queryString);
+        const beatmap = urlParams.get('beatmap')
+        window.location.replace("osu://b/" + beatmap)
+    </script>
+</head>
+
+</html>
